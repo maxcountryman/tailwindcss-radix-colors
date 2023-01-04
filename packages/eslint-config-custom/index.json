@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/eslintrc",
-  "extends": ["eslint:recommended", "turbo", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
   "env": {
     "es2022": true,
     "browser": true,
