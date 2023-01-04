@@ -1,0 +1,6 @@
+{
+  "extends": "typescript-config-custom/index.json",
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+}
