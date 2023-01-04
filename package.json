@@ -1,49 +1,24 @@
 {
-  "name": "tailwindcss-radix-colors",
-  "version": "0.1.0",
-  "description": "Bring Radix UI's color system to Tailwind CSS.",
-  "keywords": [
-    "tailwindcss",
-    "plugin",
-    "radix",
-    "color",
-    "palette",
-    "ui",
-    "design"
-  ],
-  "homepage": "https://github.com/mrcaidev/tailwindcss-radix-colors#readme",
-  "bugs": "https://github.com/mrcaidev/tailwindcss-radix-colors/issues",
-  "license": "MIT",
-  "author": {
-    "name": "Yuwang Cai",
-    "email": "mrcaidev@gmail.com",
-    "url": "https://mrcai.dev"
-  },
-  "type": "commonjs",
-  "files": [
-    "src"
-  ],
-  "main": "src/index.js",
-  "typings": "src/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mrcaidev/tailwindcss-radix-colors.git"
-  },
-  "dependencies": {
-    "@radix-ui/colors": "^0.1.8"
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "eslint . --fix --cache  --cache-location ./node_modules/.cache/eslint/.eslintcache",
+    "format": "prettier . --write --cache --plugin-search-dir=.",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "commitlint": "^17.3.0",
+    "commitlint-config-custom": "workspace:^0.0.0",
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-custom": "workspace:^0.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
-    "tailwindcss": "^3.2.4"
-  },
-  "peerDependencies": {
-    "tailwindcss": "^3.2.4"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "prettier-config-custom": "workspace:^0.0.0",
+    "turbo": "^1.6.3",
+    "typescript": "^4.9.4"
   }
 }
