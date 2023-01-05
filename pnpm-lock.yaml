@@ -29,6 +29,7 @@ importers:
       '@astrojs/solid-js': ^1.2.3
       '@astrojs/tailwind': ^2.1.3
       '@babel/core': ^7.20.7
+      '@fontsource/inter': ^4.5.14
       '@tailwindcss/typography': ^0.5.8
       '@types/node': ^18.11.18
       astro: ^1.9.0
@@ -41,6 +42,7 @@ importers:
       '@astrojs/solid-js': 1.2.3_siowh47iuozjfio44lr3ctzi7e
       '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
       '@babel/core': 7.20.7
+      '@fontsource/inter': 4.5.14
       '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
       astro: 1.9.0_@types+node@18.11.18
       solid-icons: 1.0.4_solid-js@1.6.7
@@ -710,6 +712,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+
+  /@fontsource/inter/4.5.14:
+    resolution: {integrity: sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==}
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
