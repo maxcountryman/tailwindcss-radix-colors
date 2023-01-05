@@ -1,0 +1,21 @@
+---
+import type { Frontmatter } from "models/frontmatter";
+import BaseHead from "./BaseHead.astro";
+
+export type Props = Frontmatter;
+const { title, description, createdAt, updatedAt = createdAt } = Astro.props;
+
+const createdAtIso = new Date(createdAt).toISOString();
+const updatedAtIso = new Date(updatedAt).toISOString();
+---
+
+<BaseHead title={title} description={description}>
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content={createdAtIso} />
+  <meta property="article:modified_time" content={updatedAtIso} />
+  <meta property="article:author" content="https://mrcai.dev" />
+  <meta property="article:section" content="Technology" />
+  <meta property="article:tag" content="Web development" />
+  <meta property="article:tag" content="Tailwind CSS" />
+  <meta property="article:tag" content="Radix UI" />
+</BaseHead>

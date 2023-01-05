@@ -1,0 +1,9 @@
+---
+import HomeHead from "components/head/HomeHead.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <HomeHead slot="head" />
+  <slot />
+</BaseLayout>

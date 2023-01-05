@@ -1,0 +1,20 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/700.css";
+import Footer from "components/Footer.astro";
+import Header from "components/header/Header.astro";
+import "styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth [-webkit-tap-highlight-color:transparent]">
+  <slot name="head" />
+  <body class="bg-gray-1 dark:bg-graydark-1 text-gray-12 dark:text-graydark-12">
+    <Header />
+    <main class="min-h-screen pt-20">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

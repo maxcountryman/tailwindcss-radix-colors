@@ -1,0 +1,14 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import DocHead from "components/head/DocHead.astro";
+import type { Frontmatter } from "models/frontmatter";
+import BaseLayout from "./BaseLayout.astro";
+
+export type Props = MarkdownLayoutProps<Frontmatter>;
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <DocHead slot="head" {...frontmatter} />
+  <slot />
+</BaseLayout>

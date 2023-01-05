@@ -1,0 +1,14 @@
+---
+import GithubLink from "./GithubLink.astro";
+import ThemeSwitcher from "./ThemeSwitcher";
+---
+
+<header
+  class="flex justify-between items-center gap-8 fixed top-0 left-0 right-0 px-8 py-4 bg-gray-1 dark:bg-graydark-1 z-10"
+>
+  <p class="font-bold text-lg">tailwindcss-radix-colors</p>
+  <div class="hidden md:flex gap-2">
+    <GithubLink />
+    <ThemeSwitcher client:load />
+  </div>
+</header>
