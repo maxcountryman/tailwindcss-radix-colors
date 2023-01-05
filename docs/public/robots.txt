@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://tailwindcss-radix-colors.mrcai.dev/sitemap-index.xml
