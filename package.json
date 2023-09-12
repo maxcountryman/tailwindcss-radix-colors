@@ -30,7 +30,7 @@
     "url": "https://github.com/mrcaidev/tailwindcss-radix-colors.git"
   },
   "dependencies": {
-    "@radix-ui/colors": "^1.0.1"
+    "@radix-ui/colors": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
